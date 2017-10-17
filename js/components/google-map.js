@@ -27,9 +27,9 @@ var GoogleMap = function() {
             }];
 
             // Create a map object and specify the DOM element for display.
-            var NewYork = new google.maps.LatLng(41.850, -73.961);
+            var Toronto = new google.maps.LatLng(43.650293, -79.394909);
             var map = new google.maps.Map(document.getElementById('map'), {
-                center: NewYork,
+                center: Toronto,
                 styles: styleArray,
                 scrollwheel: false,
                 zoom: 6,
@@ -65,7 +65,7 @@ var GoogleMap = function() {
                     Math.floor(worldCoordinate.y * scale / TILE_SIZE));
 
                 return [
-                    '277 Bedford Avenue, <br> Brooklyn, NY 11211, <br> New York, USA'
+                    'Toronto<br>ON, Canada'
                 ].join('<br>');
             }
 
