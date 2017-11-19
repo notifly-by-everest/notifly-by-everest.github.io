@@ -1,7 +1,55 @@
+* {
+    color: #5a5a5a;
+}
+
 .pre-header {
     border-bottom: 1px solid black;
+
+    h5 {
+        margin-left: 1em;
+    }
 }
 
 .header {
     border-bottom: 1px solid black;
+
+    h2 {
+        font-size: 54px;
+        font-weight: 300;
+    }
+}
+
+.orgs {
+
+    .org {
+
+        .orgName {
+            font-size: 30px;
+            font-weight: 300;
+            margin-bottom: 0.5em;
+            margin-top: 1em;
+        }
+
+        .h5Label {
+            margin-bottom: 10px;
+            font-weight: 300;
+            color: #898989;
+        }
+
+        .trainerName {
+            font-size: 18px;
+            background: #bababa;
+            padding: 7px 24px;
+            padding-bottom: 9px;
+            border-radius: 25px;
+            border: none;
+            color: white;
+            margin: 0px 10px;
+            font-weight: 300;
+        }
+
+        hr {
+            margin-top: 3em;
+        }
+    }
 }
