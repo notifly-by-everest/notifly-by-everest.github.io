@@ -23,6 +23,11 @@
 
     .org {
 
+        .orgLogo {
+            max-width: 100px;
+            margin-top: 2em;
+        }
+
         .orgName {
             font-size: 30px;
             font-weight: 300;

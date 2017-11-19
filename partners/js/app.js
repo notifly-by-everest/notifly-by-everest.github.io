@@ -17,14 +17,17 @@ $(document).ready(function(){
             function(data, status)
         {
             var orgsHTML = ``;
+            var imgCounter = 0;
     
             for(var key in data) {
                 // console.log(data[key]);
                 var currentOrg = data[key];
+                imgCounter++;
 
                 var trainersHTML = trainersHTMLHelper(currentOrg['trainers']);
 
                 orgsHTML += `<div class="org">
+                    <img class="orgLogo" src="./imgs/stock_org_logos/` + imgCounter + `.png" >
                     <h3 class="orgName">` + currentOrg['name'] + `</h3>
                     <h5 class="h5Label">Trainers:</h5>
                     ` + trainersHTML + `
