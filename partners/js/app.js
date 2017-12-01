@@ -44,13 +44,16 @@ $(document).ready(function(){
     // HELPER FNCS
     var trainersHTMLHelper = function(trainersObj) {
         var trainersHTML = ``;
-        console.log(trainersObj);
+        // console.log(trainersObj);
 
         for(var key in trainersObj) {
             var trainerObj = trainersObj[key];
             console.log(trainerObj);
+            var trainerFname = trainerObj['name'].split(' ')[0];
+            var trainerUid = trainerObj['uid'];
 
-            trainersHTML += `<span class="trainerName">` + trainerObj['name'] + `</span>`;
+            // trainersHTML += `<span class="trainerName">` + trainerObj['name'] + `</span>`;
+            trainersHTML += `<a href="http://www.getnotifly.xyz/app/#/select-date?trainer_key=` + trainerUid + `&trainer_name=` + trainerFname + `"><span class="trainerName">` + trainerObj['name'] + `</span></a>`;
 
         }
 
